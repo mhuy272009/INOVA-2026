@@ -29,6 +29,8 @@ An open-source, AI-integrated smart-home prototype that turns natural Vietnamese
 
   * **Temperature Rule Engine:** Automatically blinks the warning light when temperature hits a threshold (default 34 °C), adjustable dynamically via voice commands.
 
+  * **Visual Emotion Indicators:** Displays real-time emotion states on the XiaoZhi device screen to match system interactions.
+
   * **OLED & Web Management:** Displays real-time status on an OLED screen and includes a captive portal Wi-Fi setup page for reconfiguration without re-flashing firmware.
 ---
 
@@ -50,6 +52,20 @@ An open-source, AI-integrated smart-home prototype that turns natural Vietnamese
 6. Tool response: the ESP32 sends the result or the sensor reading back over the WebSocket.
 7. LLM output: the model turns the result into a natural reply (for example "Đã bật quạt cho bạn rồi nhé").
 8. Text-to-speech and playback: the reply is spoken back in Vietnamese.
+
+Hardware (submitted system)
+
+| Component | Description |
+| :--- | :--- |
+| **ESP32** | Runs the MCP client, switches the outputs, reads the sensor |
+| **Raspberry Pi** | Runs the MCP server and the MQTT broker |
+| **9 Room Lights** | Small bedroom, large bedroom, toilet, bathroom, kitchen, balcony, living room (x2), heater lamp |
+| **Ceiling Fan** | On/off |
+| **Warning Light** | Blinks when temperature is at or above the threshold |
+| **DHT22** | Temperature and humidity sensor |
+| **SSD1306 OLED (128x64)** | Status display |
+| **BOOT Button** | Hold 5 seconds to open the Wi-Fi setup page |
+   
 * **Main Components:**
   * **Hardware:** ESP32-S3 board (XiaoZhi), 2-channel relay module, DHT22 temperature/humidity sensor, Raspberry Pi.
   * **Software:** XiaoZhi firmware, STT/LLM/TTS services, custom-built MCP Server, MQTT Broker.

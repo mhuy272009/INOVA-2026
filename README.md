@@ -19,11 +19,11 @@ An open-source, AI-integrated smart-home prototype that turns natural Vietnamese
   * Retrieve environmental sensor telemetry (temperature and humidity) via voice commands.
   * Implement simple conditional automation routines (e.g., automatically turning on the fan when the temperature exceeds a threshold).
 * **What It Does Today**
-  *Controls 11 outputs by Vietnamese voice: nine room lights, a ceiling fan and a warning light.
-  *Answers spoken temperature and humidity questions from a DHT22 sensor.
-  *Runs a simple temperature rule: the warning light blinks when the temperature reaches a threshold (default 34 °C). The threshold can be changed by voice.
-  *Shows status on an OLED display.
-  *Has a Wi-Fi setup page, so the board can be reconfigured without re-flashing.
+  * Controls 11 outputs by Vietnamese voice: nine room lights, a ceiling fan and a warning light.
+  * Answers spoken temperature and humidity questions from a DHT22 sensor.
+  * Runs a simple temperature rule: the warning light blinks when the temperature reaches a threshold (default 34 °C). The threshold can be changed by voice.
+  * Shows status on an OLED display.
+  * Has a Wi-Fi setup page, so the board can be reconfigured without re-flashing.
 ---
 
 ## ⚡ Core Differentiation & Value Proposition

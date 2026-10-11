@@ -4,7 +4,7 @@
 [![Platform](https://img.shields.io/badge/Platform-ESP32--S3%20|%20Raspberry%20Pi-blue)]()
 [![Tech Stack](https://img.shields.io/badge/Tech%20Stack-IoT%20|%20AI%20|%20MQTT%20|%20MCP%20Protocol-orange)]()
 
-An open-source, AI-integrated smart home IoT solution enabling natural Vietnamese voice control for home appliances using an **ESP32-S3** microcontroller and the **Model Context Protocol (MCP)**.
+An open-source, AI-integrated smart-home prototype that turns natural Vietnamese voice commands into logged, confirmed hardware actions, using an ESP32-S3 voice terminal, a language model, a custom Model Context Protocol (MCP) server and MQTT messaging.
 
 ---
 

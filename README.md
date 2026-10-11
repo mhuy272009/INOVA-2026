@@ -57,6 +57,16 @@ An open-source, AI-integrated smart-home prototype that turns natural Vietnamese
 <img width="465" height="252" alt="image" src="https://github.com/user-attachments/assets/acbc8cf8-c46f-4f22-917b-d1c57caff440" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/881b4129-2804-42ed-ab7e-88364fe50603" />
 
+* **Communication Architecture & Protocol Bridge**
+  * Raspberry Pi gateway: runs the MCP server and the MQTT broker, linking the AI service (cloud or local) to the ESP32 over Wi-Fi.
+  * MQTT: carries sensor telemetry (for example, temperature on home/livingroom/sensor/temperature) and auxiliary system commands between the Raspberry Pi and the ESP32.
+  * WebSocket MCP connection: carries tool-call requests and their results between the XiaoZhi server and the ESP32.
+* **Tool Design and Safety**
+  * Constrained functionality: the ESP32 exposes a fixed set of MCP tools, so the model can only trigger the defined hardware functions.
+  * Context-aware descriptions: each tool description says when to use it and includes everyday feelings such as hot, cold, stuffy and dry. This helps the model connect an indirect phrase like “Trời nóng quá” to the right tool. How reliably it does this has not been measured yet.
+* **Deployment Modes**
+  * Cloud AI (demo setup): speech recognition, language modeling and speech synthesis ran on Google’s cloud AI services.
+  * Offline / edge AI (local setup): speech and language models run on a local machine using the open-source XiaoZhi ESP32 server, so voice control works without internet.
 
 ---
 

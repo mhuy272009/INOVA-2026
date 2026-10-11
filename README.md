@@ -102,6 +102,8 @@ Read device state back for true confirmation, rename and group the tools by room
 ---
 
 * **Repository Structure**
+
+  
 voicehome-ai/
 ├── README.md
 ├── docs/            # poster, architecture diagram, demo video link

@@ -14,16 +14,22 @@ An open-source, AI-integrated smart-home prototype that turns natural Vietnamese
 * **Research question:** Can a modular MCP architecture translate varied Vietnamese voice commands into correct, timely and safe device actions on low-cost embedded hardware?
 * **Working hypothesis:** Explicit, bounded tool definitions with a returned result for every action give more traceability and more reliable actuation than an unstructured conversational interface.
 * **The Solution:** Combining the **ESP32-S3** board with the open-source **XiaoZhi** platform to deliver a low-cost, self-hosted, and easily expandable architecture.
-* **Core Objectives:**
-  * Control lights and fans using natural Vietnamese speech.
-  * Retrieve environmental sensor telemetry (temperature and humidity) via voice commands.
-  * Implement simple conditional automation routines (e.g., automatically turning on the fan when the temperature exceeds a threshold).
-* **What It Does Today**
-  * Controls 11 outputs by Vietnamese voice: nine room lights, a ceiling fan and a warning light.
-  * Answers spoken temperature and humidity questions from a DHT22 sensor.
-  * Runs a simple temperature rule: the warning light blinks when the temperature reaches a threshold (default 34 °C). The threshold can be changed by voice.
-  * Shows status on an OLED display.
-  * Has a Wi-Fi setup page, so the board can be reconfigured without re-flashing.
+
+* **Project Objectives**
+  * **Voice Control:** Control room lights and fans using natural Vietnamese voice commands.
+
+  * **Environmental Telemetry:** Query real-time temperature and humidity readings via voice.
+
+  * **Automated Routines:** Trigger conditional device actions based on customizable sensor thresholds.
+
+* **Current Features**
+  * **11 Voice-Controlled Outputs:** Supports 9 room lights, 1 ceiling fan, and 1 warning light.
+
+  * **DHT22 Telemetry:** Measures ambient temperature and humidity, providing spoken audio responses.
+
+  * **Temperature Rule Engine:** Automatically blinks the warning light when temperature hits a threshold (default 34 °C), adjustable dynamically via voice commands.
+
+  * **OLED & Web Management:** Displays real-time status on an OLED screen and includes a captive portal Wi-Fi setup page for reconfiguration without re-flashing firmware.
 ---
 
 ## ⚡ Core Differentiation & Value Proposition

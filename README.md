@@ -34,6 +34,7 @@ An open-source, AI-integrated smart home IoT solution enabling natural Vietnames
   * **Software:** XiaoZhi firmware, STT/LLM/TTS services, custom-built MCP Server, MQTT Broker.
   * **Auxiliary Features:** Real-time visual emotion indicators rendered on an LCD display.
 <img width="465" height="252" alt="image" src="https://github.com/user-attachments/assets/acbc8cf8-c46f-4f22-917b-d1c57caff440" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/881b4129-2804-42ed-ab7e-88364fe50603" />
 
 
 ---

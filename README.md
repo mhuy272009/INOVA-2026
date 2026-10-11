@@ -41,7 +41,15 @@ An open-source, AI-integrated smart-home prototype that turns natural Vietnamese
 
 ## 🏗️ System Architecture & Components
 
-* **Workflow Model:** IoT Device (Voice Input/Output) -> Cloud AI Service (`STT` -> `LLM` -> `TTS`) -> `MCP Server` -> Physical Relays, Fans, and Sensors.
+* **End-to-End Pipeline:** 
+1. User speaks (Vietnamese): a direct command ("Bật đèn"), a question ("Nhiệt độ bao nhiêu?") or an implicit statement ("Trời nóng quá").
+2. Speech-to-text: the audio becomes text.
+3. LLM reasoning and tool selection: the model reads the explicit command, question or implied intent, then picks one registered MCP tool, or answers directly if no tool is needed.
+4. MCP tool call: the request is sent to the ESP32 over the WebSocket MCP connection.
+5. Hardware execution: the ESP32 switches a pin or reads the DHT22.
+6. Tool response: the ESP32 sends the result or the sensor reading back over the WebSocket.
+7. LLM output: the model turns the result into a natural reply (for example "Đã bật quạt cho bạn rồi nhé").
+8. Text-to-speech and playback: the reply is spoken back in Vietnamese.
 * **Main Components:**
   * **Hardware:** ESP32-S3 board (XiaoZhi), 2-channel relay module, DHT22 temperature/humidity sensor, Raspberry Pi.
   * **Software:** XiaoZhi firmware, STT/LLM/TTS services, custom-built MCP Server, MQTT Broker.

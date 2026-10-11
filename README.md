@@ -103,16 +103,16 @@ Read device state back for true confirmation, rename and group the tools by room
 
 * **Repository Structure**
 
-'''
+```
 voicehome-ai/
 ├── README.md
-├── docs/            # poster, architecture diagram, demo video link
-├── firmware/        # ESP32 sketch (no Wi-Fi passwords or keys)
-├── server/          # MCP server and XiaoZhi configuration
-├── hardware/        # wiring diagram, parts list, safety notes
-├── tests/           # Vietnamese command set, trial log template
-└── results/         # raw logs and summaries (when trials are done)
-'''
+├── docs/            # poster, architecture diagram, demo video link
+├── firmware/        # ESP32 sketch (no Wi-Fi passwords or keys)
+├── server/          # MCP server and XiaoZhi configuration
+├── hardware/        # wiring diagram, parts list, safety notes
+├── tests/           # Vietnamese command set, trial log template
+└── results/         # raw logs and summaries (when trials are done)
+```
 
 * **Reproduction Step**
   * Wire the ESP32, outputs, DHT22 and OLED using the pin map above.

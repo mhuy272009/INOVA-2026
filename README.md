@@ -110,8 +110,7 @@ voicehome-ai/
 ├── firmware/        # ESP32 sketch (no Wi-Fi passwords or keys)
 ├── server/          # MCP server and XiaoZhi configuration
 ├── hardware/        # wiring diagram, parts list, safety notes
-├── tests/           # Vietnamese command set, trial log template
-└── results/         # raw logs and summaries (when trials are done)
+└── test/            # Vietnamese command set, trial log template
 ```
 
 * **Reproduction Step**

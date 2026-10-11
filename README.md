@@ -10,13 +10,20 @@ An open-source, AI-integrated smart-home prototype that turns natural Vietnamese
 
 ## 💡 Concept & Problem Statement
 
-* **The Problem:** Commercial smart home ecosystems (Google Home, Alexa, etc.) rely heavily on proprietary corporate clouds, making them difficult to customize and unsuitable for deep learning studies in embedded AI.
+* **The Problem:** Commercial smart home ecosystems (Google Home, Alexa, etc.) rely heavily on proprietary corporate clouds and hide the link between understanding speech and controlling a device. That makes them hard to customize and unsuitable for deep learning studies in embedded AI.
+* **Research question:** Can a modular MCP architecture translate varied Vietnamese voice commands into correct, timely and safe device actions on low-cost embedded hardware?
+* **Working hypothesis:** Explicit, bounded tool definitions with a returned result for every action give more traceability and more reliable actuation than an unstructured conversational interface.
 * **The Solution:** Combining the **ESP32-S3** board with the open-source **XiaoZhi** platform to deliver a low-cost, self-hosted, and easily expandable architecture.
 * **Core Objectives:**
   * Control lights and fans using natural Vietnamese speech.
   * Retrieve environmental sensor telemetry (temperature and humidity) via voice commands.
   * Implement simple conditional automation routines (e.g., automatically turning on the fan when the temperature exceeds a threshold).
-
+* **What It Does Today**
+  *Controls 11 outputs by Vietnamese voice: nine room lights, a ceiling fan and a warning light.
+  *Answers spoken temperature and humidity questions from a DHT22 sensor.
+  *Runs a simple temperature rule: the warning light blinks when the temperature reaches a threshold (default 34 °C). The threshold can be changed by voice.
+  *Shows status on an OLED display.
+  *Has a Wi-Fi setup page, so the board can be reconfigured without re-flashing.
 ---
 
 ## ⚡ Core Differentiation & Value Proposition

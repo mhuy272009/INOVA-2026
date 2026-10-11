@@ -86,7 +86,7 @@ Hardware (submitted system)
 
 ---
 
-##🛠️Operations, Safety & Reproducibility
+## 🛠️ Operations, Safety & Reproducibility
 
 * **Limitations and Safety Precautions**
 * The demo setup used a cloud AI service, which adds network delay and privacy risk. The offline setup avoids the internet but depends on the speed and quality of the local hardware and models.

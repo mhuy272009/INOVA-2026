@@ -86,6 +86,39 @@ Hardware (submitted system)
 
 ---
 
+##🛠️Operations, Safety & Reproducibility
+
+* **Limitations and Safety Precautions**
+* The demo setup used a cloud AI service, which adds network delay and privacy risk. The offline setup avoids the internet but depends on the speed and quality of the local hardware and models.
+* Several outputs sit on ESP32 strapping pins (0, 2, 12, 15). A load on these pins can interfere with booting, so check them before reuse.
+* The Wi-Fi setup page uses a fixed access-point password in the source. Change it before use.
+* DHT22 accuracy limits the quality of the measurements.
+* Use isolated low-voltage demonstration loads until electrical protection and fail-safe behavior are verified. Do not connect mains loads.
+
+* **Future Work**
+
+Read device state back for true confirmation, rename and group the tools by room, extend to more rooms and devices, compare the cloud and offline setups on accuracy and response time, try other local speech models, add stronger authentication, and publish measured results from repeated trials.
+
+---
+
+* **Repository Structure**
+voicehome-ai/
+├── README.md
+├── docs/            # poster, architecture diagram, demo video link
+├── firmware/        # ESP32 sketch (no Wi-Fi passwords or keys)
+├── server/          # MCP server and XiaoZhi configuration
+├── hardware/        # wiring diagram, parts list, safety notes
+├── tests/           # Vietnamese command set, trial log template
+└── results/         # raw logs and summaries (when trials are done)
+* **Reproduction Step**
+  * Wire the ESP32, outputs, DHT22 and OLED using the pin map above.
+  * Flash the sketch. Hold BOOT for 5 seconds to open the Wi-Fi setup page and enter your own network and MCP endpoint.
+  * Start the XiaoZhi server (cloud or offline).
+  * Connect your speech and language service keys (never commit keys to the repository).
+  * Run the demonstration sequence above.
+
+---
+
 ## 🗓️ 12-Session Implementation Roadmap
 
 The curriculum follows a "demo-first" approach to spark engagement and show immediate results before diving deep into Arduino/C++ firmware development. Divided into 4 phases:

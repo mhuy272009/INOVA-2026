@@ -58,3 +58,5 @@ The curriculum follows a "demo-first" approach to spark engagement and show imme
 | **10** | MQTT Network Communication | Implement `PubSubClient` library to handle command exchange between the ESP32 board and MCP Server | Stable, bi-directional communication over MQTT |
 | **11** | Full System Integration & Live Demo | Chain the complete architecture: Voice $\rightarrow$ AI $\rightarrow$ MCP Tool $\rightarrow$ Relays/Sensors for end-to-end scenarios | Fully integrated system capable of speech control and telemetry retrieval |
 | **12** | Code Optimization, Debugging & Reporting | Code refactoring, latency reduction, cleanup, and preparation of presentation reports | Clean codebase, stable demo performance, and presentation readiness |
+
+<img width="465" height="252" alt="image" src="https://github.com/user-attachments/assets/acbc8cf8-c46f-4f22-917b-d1c57caff440" />

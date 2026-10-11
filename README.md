@@ -88,6 +88,10 @@ Hardware (submitted system)
 
 ## 🛠️ Operations, Safety & Reproducibility
 
+* **Demonstration**
+  * **Demo Video (using Google AI):** https://drive.google.com/file/d/1UWZdcizS1zv7BXUtGWAlvrooQDtpEjc5/view?usp=sharing
+  * **Final Product:** One complete cause-and-response chain: two different Vietnamese commands, a temperature/humidity question, then a lowered threshold that makes the warning light blink. The log or dashboard shows the recognized text, selected tool, device response and total latency.
+
 * **Limitations and Safety Precautions**
 * The demo setup used a cloud AI service, which adds network delay and privacy risk. The offline setup avoids the internet but depends on the speed and quality of the local hardware and models.
 * Several outputs sit on ESP32 strapping pins (0, 2, 12, 15). A load on these pins can interfere with booting, so check them before reuse.
@@ -120,6 +124,11 @@ voicehome-ai/
   * Connect your speech and language service keys (never commit keys to the repository).
   * Run the demonstration sequence above.
 
+## Team And Contribution
+
+* **Team Member**
+Trương Anh Huy (Vietnam Australia International School), **Nguyễn Minh Huy (High School for the Gifted, VNUHCM)**, Võ Minh Khôi (High School for the Gifted, VNUHCM), Đặng Trúc Chi (High School for the Gifted, VNUHCM), Nguyễn Tuấn Kiệt (Hung Vuong High School), Vũ Đức Minh (HUS High School for Gifted Students, HSGS).
+  
 ---
 
 ## 🗓️ 12-Session Implementation Roadmap
